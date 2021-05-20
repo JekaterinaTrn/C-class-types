@@ -1,0 +1,47 @@
+ base class -base class on C # kontekstis klass, mida kasutatakse teiste klasside loomiseks või tuletamiseks. 
+ Põhiklassist tuletatud klasse nimetatakse lasteklassideks, alaklassideks või tuletatud klassideks. ... Põhiklass on tuntud ka kui vanemklass või superklass.
+ 
+ structs - C # puhul on struct väärtuse tüüp andmetüüp, mis tähistab andmestruktuure. See võib sisaldada parameetritega konstruktorit,
+ staatilist konstruktorit, konstande, väljaid, meetodeid, omadusi, indekseerijaid, operaatoreid, sündmusi ja pesastatud tüüpe.
+ 
+ enums - C # puhul kasutatakse enum (või loenduse tüüpi), et määrata konstantsed nimed arvuliste täisarvude rühmale.
+ See muudab püsiväärtused loetavamaks, näiteks WeekDays. Nädalapäevale viitamisel on esmaspäev loetavam kui number 0.
+ 
+ 
+ Partial Classes - Rakenduses C # saate osalise märksõna abil jagada klassi, struktuuri, meetodi või liidese rakendamise mitmes .cs-failis.
+ Kompilaator ühendab programmi kompileerimisel kogu rakenduse mitmest .cs-failist.
+ 
+ Static Classes - C # keeles tähendab staatiline midagi sellist, mida ei saa kohe muuta.
+ Te ei saa luua staatilise klassi objekti ega pääse staatilistele liikmetele objekti abil juurde.
+ C # klassi, muutujaid, meetodeid, omadusi, operaatoreid, sündmusi ja konstruktoreid saab staatilise modifikaatori märksõnana määratleda staatilistena.
+ 
+ abstract - Abstraktne klass: on piiratud klass, mida ei saa kasutada objektide loomiseks (sellele juurdepääsuks peab see olema päritud teiselt klassilt).
+ 
+ 
+ interface - Liides sisaldab seotud funktsionaalsuste rühma määratlusi, mida mitte-abstraktne klass või struktuur peavad rakendama.
+ Liideste abil saate näiteks kaasata käitumise klassi mitmest allikast. See võime on C # -s oluline, kuna keel ei toeta klasside mitmekordset pärimist.
+ 
+ 
+ Classide ligipääsetavus:
+ 
+ public - Avalik märksõna on juurdepääsumuundur tüüpidele ja tüübiliikmetele. Avalik juurdepääs on kõige lubavam juurdepääsutasem.
+ 
+ private -Privaatne märksõna on liikme juurdepääsu modifitseerija.See leht hõlmab privaatset juurdepääsu.
+ Privaatne märksõna on ka osa privaatselt kaitstud juurdepääsu modifikaatorist.
+ 
+ Sealed - Klassile rakendamisel takistab suletud modifikaator teistel klassidel sellest pärimist.
+ Järgmises näites pärib B klass A-klassist, kuid ükski klass ei saa B-klassist pärida.
+ 
+class A {}
+sealed class B : A {}
+
+protected - Kaitstud märksõna on liikme juurdepääsu modifitseerija.
+Kaitstud liige on ligipääsetav oma klassis ja tuletatud klassieksemplaride kaudu.
+
+Internal -  Sisemine märksõna on tüüpide ja tüübiliikmete juurdepääsu modifitseerija.
+See leht hõlmab sisemist juurdepääsu. Sisemine märksõna on ka osa kaitstud sisemise juurdepääsu modifikaatorist.
+
+Protected internal  - Kaitstud sisemine märksõna kombinatsioon on liikme juurdepääsu modifitseerija.
+Kaitstud sisemisele osale pääseb juurde praegusest koosseisust või tüüpidest, mis tuletatakse sisaldava klassi järgi. 
+
+
